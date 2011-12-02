@@ -4,7 +4,7 @@ module LoremIpsum
     class NoMasError < StandardError; end
     class IncorrectFormat < StandardError; end
 
-    def lorem_ipsum(arg)
+    def lorem_ipsum(arg='1p')
       if /(\d+)([w|c|s|p])/i.match(arg)
         num = $1.to_i
 
